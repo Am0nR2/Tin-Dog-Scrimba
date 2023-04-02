@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.container{
+    width: 400px;
+    height: 650px;
+    margin: 2em auto;
+    border: 2px solid rgb(176, 176, 176);
+    border-radius: 20px;
+    box-shadow: 0px 0px 45px black;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+ 
+}
+.header img{
+width: 30px;
+height: 30px;
+}
+.header .main-logo{
+    width: 70px;
+    height: 35px;
+}
+.image-area{
+
+    width: 98%;
+    height: 480px;
+    margin: 0 auto;
+    position: relative;
+}
+.image-area img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.absolute-text{
+    position: absolute;
+    bottom: 0.75em;
+    left: 0.75em;
+    color: white;
+}
+.absolute-text h2{
+    font-size: 26px;
+    margin-bottom: 0;
+    text-shadow: 0px 0px 2px black;
+}
+.absolute-text p{
+    margin-top: 0.5em;
+    font-size: 20px;
+    color: #B7B7B7;
+    text-shadow: 0px 0px 2px black;
+}
+.like-or-dislike{
+    display: flex;
+    width: 200px;
+    margin: 0.75em auto 0.5em;
+    justify-content: space-around;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(1.0);
+
+}
+.absolute-image{
+    position: absolute;
+    top: 2.75em;
+    left: 0.75em;
+    width: 150px;
+    transform: rotate(-35deg);
+    
+}
+#dislike-btn:active{
+    background-color: #FFE7EF;
+}
+#like-btn:active{
+    background-color: #DBFFF4;
+}
+#dislike-btn{
+    padding: 2em;
+    border: 1px solid rgb(186, 186, 186);
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 50%;
+    background-image: url("./images/icon-cross.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#like-btn{
+    padding: 2em;
+    border: 1px solid rgb(186, 186, 186);
+    box-shadow: 0px 0px 15px gray;
+    border-radius: 50%;
+    background-image: url("./images/icon-heart.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-area{
+    
+    width: 100%;
+    height: 100%;
+   
+}
+.liked-pictures{
+    
+    display: flex;
+    gap: 1em;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0.5em;
+    border: 1px solid gray;
+  
+}
+.liked-pictures:hover{
+    border: none;
+    box-shadow: 0px 0px 25px gray;
+}
+
+.title,
+.info{
+    text-align: center;
+    color: green;
+    text-shadow: 0px 0px 2px black;
+    text-transform: capitalize;
+    margin-bottom: 2em;
+    
+}
+.img-info{
+    font-weight: bold;
+    opacity: 0.8;
+}
+.img-info{
+    margin-top: 0.25em;
+}
+.end-badge{
+    width: 100px;
+    flex-basis: 30%;
+}
+
+.img{
+width: 100px;
+height: 100px;
+object-fit: cover;
+
+}
+.picture-card-info{
+    flex-basis: 30%;
+    font-size: 0.75em;
+}
+
